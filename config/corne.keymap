@@ -29,12 +29,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2   |  3  |  4   |  5    |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// |  ENT |     | BKSP |     | BKSP | DEL   |   |     |  4  |  5  |  6  |     |      |
+// |  ENT |     | BKSP | SPC | BKSP | DEL   |   |     |  4  |  5  |  6  |     |      |
 // | SHFT | BT1 | BT2  | BT3 | BT4  | BT5   |   |     |  1  |  2  |  3  |     |      |
-//                     |     |      | BTCLR |   | ENT |     | ALT |
+//                     |     |      | BTCLR |   | ENT |     |  0  |
                         bindings = <
    &kp TAB   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5        &kp N6  &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-   &kp RET   &trans       &kp BSPC     &trans       &kp BSPC     &kp DELETE    &trans  &kp N4 &kp N5 &kp N6 &trans &trans
+   &kp RET   &trans       &kp BSPC     &kp SPACE    &kp BSPC     &kp DELETE    &trans  &kp N4 &kp N5 &kp N6 &trans &trans
    &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans  &kp N1 &kp N2 &kp N3 &trans &trans
                                        &trans       &trans       &bt BT_CLR    &kp RET &trans &kp RALT
                         >;
